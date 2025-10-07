@@ -7,7 +7,8 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "target": "ES6",
     "types": [],
     // For nodejs:
@@ -34,12 +35,14 @@
 
     // Recommended Options
     "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    "jsx": "preserve",
+    // "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "lib": ["ESNext", "DOM"]
   }
 }
